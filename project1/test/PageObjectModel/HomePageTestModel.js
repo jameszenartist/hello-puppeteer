@@ -6,13 +6,13 @@ module.exports = class HomePageTestModel {
 
   async go() {
     // here it's w/ the hardcoded URL:
-    await this.page.goto("https://www.packtpub.com/");
+    // await this.page.goto("https://www.packtpub.com/");
   }
 
   //DYNAMIC VERSION
-  // async go() {
-  //   await this.page.goto(this.config.baseURL);
-  // }
+  async go() {
+    await this.page.goto(this.config.baseURL);
+  }
 
   async title() {
     return this.page.title();
