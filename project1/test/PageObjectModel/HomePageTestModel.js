@@ -5,6 +5,7 @@ module.exports = class HomePageTestModel {
   }
 
   async go() {
+    // here it's w/ the hardcoded URL:
     await this.page.goto("https://www.packtpub.com/");
   }
 

@@ -32,6 +32,7 @@ describe("Home page header", () => {
     await browser.close();
   });
 
+  //FIRST TEST:
   it("Title should have Packt name", async () => {
     // const title = await page.title();
 
@@ -41,6 +42,7 @@ describe("Home page header", () => {
     title.should.contain("Packt");
   });
 
+  //SECOND TEST:
   it("Title should mention Books", async () => {
     expect(await page.title()).to.contain("Books");
   });
