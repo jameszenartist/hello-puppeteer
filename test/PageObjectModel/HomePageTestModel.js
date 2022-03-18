@@ -4,6 +4,11 @@ module.exports = class HomePageTestModel {
     this.config = config;
   }
 
+  // async go() {
+  //   await this.page.goto("https://www.packtpub.com/");
+  // }
+
+  //DYNAMIC VERSION
   async go() {
     await this.page.goto(this.config.baseURL);
   }
@@ -12,13 +17,3 @@ module.exports = class HomePageTestModel {
     return this.page.title();
   }
 };
-
-// module.exports = class HomePageTestModel {
-//   go() {}
-//   title() {}
-//   search(searchValue) {}
-//   signIn() {}
-//   viewCart() {}
-//   goToCheckout() {}
-//   subscribe() {}
-// };
